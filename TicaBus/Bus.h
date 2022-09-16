@@ -16,7 +16,6 @@ public:
     string getModelo();
     string getMarca();
     double getCostoDelAsiento();
-    Asiento** getVecA();
     int getCantidad();
     int getTamano();
     void setPlaca(string placa);

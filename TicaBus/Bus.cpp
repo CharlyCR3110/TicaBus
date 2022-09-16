@@ -44,11 +44,6 @@ double Bus::getCostoDelAsiento()
 	return costoDelAsiento;
 }
 
-Asiento** Bus::getVecA()
-{
-	return vecA;
-}
-
 int Bus::getCantidad()
 {
 	return cantidad;
