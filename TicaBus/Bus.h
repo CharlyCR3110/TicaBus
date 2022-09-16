@@ -10,4 +10,17 @@ private:
     int cantidad;
     int tamano;
 public:
+    Bus(string placa = "", string modelo = "", string marca = "", double costoDelAsiento = 0, int tamano = 10);
+    virtual ~Bus();
+    string getPlaca();
+    string getModelo();
+    string getMarca();
+    double getCostoDelAsiento();
+    Asiento** getVecA();
+    int getCantidad();
+    int getTamano();
+    void setPlaca(string placa);
+    void setModelo(string modelo);
+    void setMarca(string marca);
+    void setCostoDelAsiento(double costoDelAsiento);
 };
