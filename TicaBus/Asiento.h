@@ -14,4 +14,3 @@ public:
 	void setCedula(string cedula);
 	string toString();
 };
-};
