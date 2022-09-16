@@ -87,4 +87,5 @@ string Bus::toString()
 	for (int i = 0; i < cantidad; i++) {
 		ss << vecA[i]->toString() << endl;
 	}
+	return ss.str();
 }
