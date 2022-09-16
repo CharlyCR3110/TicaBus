@@ -73,3 +73,18 @@ void Bus::setCostoDelAsiento(double costoDelAsiento)
 {
 	this->costoDelAsiento = costoDelAsiento;
 }
+
+string Bus::toString()
+{
+	stringstream ss;
+	ss << "Placa: " << placa << endl;
+	ss << "Modelo: " << modelo << endl;
+	ss << "Marca: " << marca << endl;
+	ss << "Costo del asiento: " << costoDelAsiento << endl;
+	ss << "Cantidad de asientos: " << cantidad << endl;
+	ss << "Tamano del arreglo: " << tamano << endl;
+	ss << "Asientos: " << endl;
+	for (int i = 0; i < cantidad; i++) {
+		ss << vecA[i]->toString() << endl;
+	}
+}

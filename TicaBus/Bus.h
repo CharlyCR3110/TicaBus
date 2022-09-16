@@ -22,4 +22,5 @@ public:
     void setModelo(string modelo);
     void setMarca(string marca);
     void setCostoDelAsiento(double costoDelAsiento);
+    string toString();
 };
