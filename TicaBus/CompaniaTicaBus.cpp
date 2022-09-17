@@ -102,7 +102,7 @@ bool CompaniaTicaBus::registrarAsiento(string placa, Asiento* asiento)
 	return false;
 }
 
-int CompaniaTicaBus::cantidadBusesConMasDeLaMitadDeSuCapacidadOcupada()
+int CompaniaTicaBus::cantidadBusesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada()
 {
 	int contador = 0;
 	for (int i = 0; i < cantidad; i++) {
@@ -113,7 +113,7 @@ int CompaniaTicaBus::cantidadBusesConMasDeLaMitadDeSuCapacidadOcupada()
 	return contador;
 }
 
-string CompaniaTicaBus::busesConMasDeLaMitadDeSuCapacidadOcupada()
+string CompaniaTicaBus::busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada()
 {
 	stringstream ss;
 	for (int i = 0; i < cantidad; i++) {
