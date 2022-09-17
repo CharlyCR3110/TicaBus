@@ -28,4 +28,5 @@ public:
     bool existeElBus(string placa);
     int cantidadDeAsientosOcupados(string placa);
     int cantidadDeAsientosLibres(string placa);
+    string mostrarTodasLasCedulasDeUnBus(string placa);
 };

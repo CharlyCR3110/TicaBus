@@ -144,7 +144,8 @@ bool CompaniaTicaBus::existeElBus(string placa)
 	return false;
 }
 
-int CompaniaTicaBus::cantidadDeAsientosOcupados(string placa) {
+int CompaniaTicaBus::cantidadDeAsientosOcupados(string placa) 
+{
 	for (int i = 0; i < cantidad; i++) {
 		if (vecB[i]->getPlaca() == placa) {
 			return vecB[i]->getCantidad();
@@ -153,11 +154,22 @@ int CompaniaTicaBus::cantidadDeAsientosOcupados(string placa) {
 	return 0;
 }
 
-int CompaniaTicaBus::cantidadDeAsientosLibres(string placa) {
+int CompaniaTicaBus::cantidadDeAsientosLibres(string placa) 
+{
 	for (int i = 0; i < cantidad; i++) {
 		if (vecB[i]->getPlaca() == placa) {
 			return vecB[i]->getTamano() - vecB[i]->getCantidad();
 		}
 	}
 	return 0;
+}
+
+string CompaniaTicaBus::mostrarTodasLasCedulasDeUnBus(string placa)
+{
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return vecB[i]->mostrarTodasLasCedulas();
+		}
+	}
+	return "";
 }
