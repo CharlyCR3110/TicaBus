@@ -58,7 +58,13 @@ int main() {
             cin >> cedula;
             asiento = new Asiento(cedula);
             compania->registrarAsiento(placaBus, asiento);
-            break;   
+            break;
+        case 3:
+            cout << "Cantidad de buses con la mitad o mas de los asientos ocupados: " 
+            << compania->cantidadBusesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada() << endl;
+            cout << "Buses con la mitad o mas de los asientos ocupados: " << 
+            compania->busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada() << endl;
+            break;
         default:
             break;
         }
