@@ -85,7 +85,7 @@ string CompaniaTicaBus::toString()
 	ss << "Telefono: " << telefono << endl;
 	ss << "Cantidad de buses: " << cantidad << endl;
 	ss << "Tamano del arreglo: " << tamano << endl << endl;
-	ss << " Buses: " << endl;
+	ss << "Buses: " << endl;
 	for (int i = 0; i < cantidad; i++) {
 		ss << vecB[i]->toString() << endl;
 	}
