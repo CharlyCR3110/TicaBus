@@ -91,3 +91,13 @@ string CompaniaTicaBus::toString()
 	}
 	return ss.str();
 }
+
+bool CompaniaTicaBus::registrarAsiento(string placa, Asiento* asiento)
+{
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return vecB[i]->registrarAsiento(asiento);
+		}
+	}
+	return false;
+}

@@ -89,3 +89,13 @@ string Bus::toString()
 	}
 	return ss.str();
 }
+
+bool Bus::registrarAsiento(Asiento* asiento)
+{
+	if (cantidad < tamano) {
+		vecA[cantidad] = asiento;
+		cantidad++;
+		return true;
+	}
+	return false;
+}

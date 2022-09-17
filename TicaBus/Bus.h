@@ -23,4 +23,5 @@ public:
     void setMarca(string marca);
     void setCostoDelAsiento(double costoDelAsiento);
     string toString();
+    bool registrarAsiento(Asiento* asiento);
 };

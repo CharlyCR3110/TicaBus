@@ -20,4 +20,5 @@ public:
     void agregarBus(Bus* b);
     void eliminarBus(string placa);
     string toString();
+    bool registrarAsiento(string placa, Asiento* asiento);
 };
