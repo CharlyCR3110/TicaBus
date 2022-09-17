@@ -105,3 +105,12 @@ double Bus::totalRecaudado()
 	double total = cantidad * costoDelAsiento;
 	return total;
 }
+
+string Bus::mostrarTodasLasCedulas()
+{
+	stringstream ss;
+	for (int i = 0; i < cantidad; i++) {
+		ss << vecA[i]->getCedula() << endl;
+	}
+	return ss.str();
+}

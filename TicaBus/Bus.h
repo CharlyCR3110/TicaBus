@@ -25,4 +25,5 @@ public:
     string toString();
     bool registrarAsiento(Asiento* asiento);
     double totalRecaudado();
+    string mostrarTodasLasCedulas();
 };
