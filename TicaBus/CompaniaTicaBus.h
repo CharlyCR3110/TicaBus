@@ -30,4 +30,6 @@ public:
     int cantidadDeAsientosLibres(string placa);
     string mostrarTodasLasCedulasDeUnBus(string placa);
     Bus* busQueHaRecaudadoMasDinero();
+    //Mostrar buses descendentemente con base en el modelo" << endl;
+    string mostrarBusesDescendentementeConBaseEnElModelo();
 };

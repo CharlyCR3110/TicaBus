@@ -184,3 +184,21 @@ Bus* CompaniaTicaBus::busQueHaRecaudadoMasDinero() {
 	}
 	return bus;
 }
+
+string CompaniaTicaBus::mostrarBusesDescendentementeConBaseEnElModelo() {
+	stringstream ss;
+	Bus* aux;
+	for (int i = 0; i < cantidad; i++) {
+		for (int j = 0; j < cantidad - 1; j++) {
+			if (vecB[j]->getModelo() < vecB[j + 1]->getModelo()) {
+				aux = vecB[j];
+				vecB[j] = vecB[j + 1];
+				vecB[j + 1] = aux;
+			}
+		}
+	}
+	for (int i = 0; i < cantidad; i++) {
+		ss << vecB[i]->toString() << endl;
+	}
+	return ss.str();
+}
