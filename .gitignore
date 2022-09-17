@@ -7,7 +7,8 @@
 *.vcxproj.filters
 *.vcxproj
 *.sln
-
+# vscode
+*.vscode/
 
 # User-specific files
 *.rsuser
