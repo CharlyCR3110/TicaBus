@@ -173,3 +173,14 @@ string CompaniaTicaBus::mostrarTodasLasCedulasDeUnBus(string placa)
 	}
 	return "";
 }
+
+Bus* CompaniaTicaBus::busQueHaRecaudadoMasDinero() {
+	Bus* bus = vecB[0];
+	//el for empieza desde 1 porque al inico el bus que ha recaudado mas dinero es el que esta en la posicion 0
+	for (int i = 1; i < cantidad; i++) {
+		if (vecB[i]->totalRecaudado() > bus->totalRecaudado()) {
+			bus = vecB[i];
+		}
+	}
+	return bus;
+}
