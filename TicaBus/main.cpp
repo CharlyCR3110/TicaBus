@@ -51,7 +51,15 @@ int main() {
             bus = new Bus(placaBus, modeloBus, marcaBus, costoDelAsientoBus, tamanoBus);
             compania->agregarBus(bus);
             break;
-        defaul:
+        case 2:
+            cout << "Ingrese la placa del bus: ";
+            cin >> placaBus;
+            cout << "Ingrese la cedula del pasajero: ";
+            cin >> cedula;
+            asiento = new Asiento(cedula);
+            compania->registrarAsiento(placaBus, asiento);
+            break;   
+        default:
             break;
         }
         system("cls");
