@@ -152,3 +152,12 @@ int CompaniaTicaBus::cantidadDeAsientosOcupados(string placa) {
 	}
 	return 0;
 }
+
+int CompaniaTicaBus::cantidadDeAsientosLibres(string placa) {
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return vecB[i]->getTamano() - vecB[i]->getCantidad();
+		}
+	}
+	return 0;
+}

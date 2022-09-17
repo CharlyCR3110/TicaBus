@@ -27,4 +27,5 @@ public:
     double totalRecaudadoPorUnBus(string placa);
     bool existeElBus(string placa);
     int cantidadDeAsientosOcupados(string placa);
+    int cantidadDeAsientosLibres(string placa);
 };
