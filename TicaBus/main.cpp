@@ -99,6 +99,9 @@ int main() {
                 cout << "Ningun bus coincide con esa placa" << endl;
             }
             break;
+        case 7:
+            cout << "Bus que ha recaudado mas dinero: " << compania->busQueHaRecaudadoMasDinero() << endl;
+            break;
         default:
             break;
         }
