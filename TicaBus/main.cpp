@@ -68,7 +68,12 @@ int main() {
         case 4:
             cout << "Ingrese la placa del bus: ";
             cin >> placaBus;
-            cout << "Total recaudado por el bus placa: " << placaBus << " " << compania->totalRecaudadoPorUnBus(placaBus) << endl;
+            cout << "Buscando el bus..." << endl;
+            if (compania->existeElBus(placaBus)) {
+                cout << "Total recaudado por el bus: " << compania->totalRecaudadoPorUnBus(placaBus) << endl;
+            } else {
+                cout << "Ningun bus coincide con esa placa" << endl;
+            }
             break;
         default:
             break;
