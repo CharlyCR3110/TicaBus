@@ -25,4 +25,5 @@ public:
     int cantidadBusesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada();
     string busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada();
     double totalRecaudadoPorUnBus(string placa);
+    bool existeElBus(string placa);
 };

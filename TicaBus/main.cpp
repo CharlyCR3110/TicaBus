@@ -65,6 +65,11 @@ int main() {
             cout << "Buses con la mitad o mas de los asientos ocupados: " << 
             compania->busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada() << endl;
             break;
+        case 4:
+            cout << "Ingrese la placa del bus: ";
+            cin >> placaBus;
+            cout << "Total recaudado por el bus placa: " << placaBus << " " << compania->totalRecaudadoPorUnBus(placaBus) << endl;
+            break;
         default:
             break;
         }

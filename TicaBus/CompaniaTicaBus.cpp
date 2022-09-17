@@ -133,3 +133,13 @@ double CompaniaTicaBus::totalRecaudadoPorUnBus(string placa)
 	}
 	return 0;
 }
+
+bool CompaniaTicaBus::existeElBus(string placa)
+{
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return true;
+		}
+	}
+	return false;
+}
