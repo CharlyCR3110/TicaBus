@@ -75,6 +75,17 @@ int main() {
                 cout << "Ningun bus coincide con esa placa" << endl;
             }
             break;
+        case 5:
+            cout << "Ingrese la placa del bus: ";
+            cin >> placaBus;
+            cout << "Buscando el bus..." << endl;
+            if (compania->existeElBus(placaBus)) {
+                cout << "Cantidad de asientos ocupados: " << compania->cantidadDeAsientosOcupados(placaBus) << endl;
+                cout << "Cantidad de asientos libres: " << compania->cantidadDeAsientosLibres(placaBus) << endl;
+            } else {
+                cout << "Ningun bus coincide con esa placa" << endl;
+            }
+            break;
         default:
             break;
         }
