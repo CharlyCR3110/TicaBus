@@ -136,6 +136,7 @@ double CompaniaTicaBus::totalRecaudadoPorUnBus(string placa)
 
 bool CompaniaTicaBus::existeElBus(string placa)
 {
+/* Checking si existe el bus. */
 	for (int i = 0; i < cantidad; i++) {
 		if (vecB[i]->getPlaca() == placa) {
 			return true;
@@ -176,7 +177,7 @@ string CompaniaTicaBus::mostrarTodasLasCedulasDeUnBus(string placa)
 
 Bus* CompaniaTicaBus::busQueHaRecaudadoMasDinero() {
 	Bus* bus = vecB[0];
-	//el for empieza desde 1 porque al inico el bus que ha recaudado mas dinero es el que esta en la posicion 0
+	/*el for empieza desde 1 porque al inico el bus que ha recaudado mas dinero es el que esta en la posicion 0 */
 	for (int i = 1; i < cantidad; i++) {
 		if (vecB[i]->totalRecaudado() > bus->totalRecaudado()) {
 			bus = vecB[i];
@@ -188,6 +189,7 @@ Bus* CompaniaTicaBus::busQueHaRecaudadoMasDinero() {
 string CompaniaTicaBus::mostrarBusesDescendentementeConBaseEnElModelo() {
 	stringstream ss;
 	Bus* aux;
+/* Ordenando el array orden descente con base en el modelo. */
 	for (int i = 0; i < cantidad; i++) {
 		for (int j = 0; j < cantidad - 1; j++) {
 			if (vecB[j]->getModelo() < vecB[j + 1]->getModelo()) {

@@ -92,6 +92,8 @@ string Bus::toString()
 
 bool Bus::registrarAsiento(Asiento* asiento)
 {
+/* Comprueba si la cantidad de asientos es menor que el tamaño del array. Si lo es, agrega el asiento
+al array y aumentará la cantidad de asientos en 1. */
 	if (cantidad < tamano) {
 		vecA[cantidad] = asiento;
 		cantidad++;
