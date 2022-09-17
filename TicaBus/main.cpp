@@ -84,9 +84,20 @@ int main() {
                 cout << "Ningun bus coincide con esa placa" << endl;
             }
             break;
+        case 6:
+            cout << "Ingrese la placa del bus: ";
+            cin >> placaBus;
+            cout << "Buscando el bus..." << endl;
+            if (compania->existeElBus(placaBus)) {
+                cout << "Cedulas registradas en el bus: " << compania->mostrarTodasLasCedulasDeUnBus(placaBus) << endl;
+            } else {
+                cout << "Ningun bus coincide con esa placa" << endl;
+            }
+            break;
         default:
             break;
         }
+		system("pause");
         system("cls");
     } while (opcion != 9);
 
