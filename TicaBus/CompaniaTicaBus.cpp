@@ -143,3 +143,12 @@ bool CompaniaTicaBus::existeElBus(string placa)
 	}
 	return false;
 }
+
+int CompaniaTicaBus::cantidadDeAsientosOcupados(string placa) {
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return vecB[i]->getCantidad();
+		}
+	}
+	return 0;
+}

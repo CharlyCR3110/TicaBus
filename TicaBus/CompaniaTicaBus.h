@@ -26,4 +26,5 @@ public:
     string busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada();
     double totalRecaudadoPorUnBus(string placa);
     bool existeElBus(string placa);
+    int cantidadDeAsientosOcupados(string placa);
 };
