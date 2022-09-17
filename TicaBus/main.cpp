@@ -11,10 +11,8 @@ int main() {
     double costoDelAsientoBus;
     int tamanoBus;
     Bus* bus;
-    //datos necesarios para la compañia
-    string nombreCom, telefono;
-    int tamanoCom;
-    CompaniaTicaBus* compania;
+    //compañia
+	CompaniaTicaBus* compania = new CompaniaTicaBus("TicaBus", "2251-2212", 10);
     //variables para el menu
     int opcion;
 
