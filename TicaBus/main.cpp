@@ -102,6 +102,9 @@ int main() {
         case 7:
             cout << "Bus que ha recaudado mas dinero: " << compania->busQueHaRecaudadoMasDinero() << endl;
             break;
+        case 8:
+            cout << "Buses descendentemente con base en el modelo: " << compania->mostrarBusesDescendentementeConBaseEnElModelo() << endl;
+            break;
         default:
             break;
         }
