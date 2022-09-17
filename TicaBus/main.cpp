@@ -105,6 +105,9 @@ int main() {
         case 8:
             cout << "Buses descendentemente con base en el modelo: " << compania->mostrarBusesDescendentementeConBaseEnElModelo() << endl;
             break;
+        case 9:
+            cout << "Saliendo..." << endl;
+            break;
         default:
             break;
         }
