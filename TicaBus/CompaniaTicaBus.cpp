@@ -106,7 +106,7 @@ int CompaniaTicaBus::cantidadBusesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada()
 {
 	int contador = 0;
 	for (int i = 0; i < cantidad; i++) {
-		if (vecB[i]->getCantidad() > vecB[i]->getTamano() / 2) {
+		if (vecB[i]->getCantidad() >= vecB[i]->getTamano() / 2) {
 			contador++;
 		}
 	}
@@ -117,7 +117,7 @@ string CompaniaTicaBus::busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada()
 {
 	stringstream ss;
 	for (int i = 0; i < cantidad; i++) {
-		if (vecB[i]->getCantidad() > vecB[i]->getTamano() / 2) {
+		if (vecB[i]->getCantidad() >= vecB[i]->getTamano() / 2) {
 			ss << "Bus numero" << i << " " << vecB[i]->toString() << endl;
 		}
 	}
