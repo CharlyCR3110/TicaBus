@@ -21,4 +21,6 @@ public:
     void eliminarBus(string placa);
     string toString();
     bool registrarAsiento(string placa, Asiento* asiento);
+    //saber cuales y cuantos buses tienen mas de la mitad de su capacidad ocupada
+    int cantidadBusesConMasDeLaMitadDeSuCapacidadOcupada();
 };
