@@ -123,3 +123,13 @@ string CompaniaTicaBus::busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada()
 	}
 	return ss.str();
 }
+
+double CompaniaTicaBus::totalRecaudadoPorUnBus(string placa)
+{
+	for (int i = 0; i < cantidad; i++) {
+		if (vecB[i]->getPlaca() == placa) {
+			return vecB[i]->totalRecaudado();
+		}
+	}
+	return 0;
+}

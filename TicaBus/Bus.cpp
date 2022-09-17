@@ -99,3 +99,9 @@ bool Bus::registrarAsiento(Asiento* asiento)
 	}
 	return false;
 }
+
+double Bus::totalRecaudado()
+{
+	double total = cantidad * costoDelAsiento;
+	return total;
+}

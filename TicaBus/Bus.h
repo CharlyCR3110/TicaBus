@@ -24,4 +24,5 @@ public:
     void setCostoDelAsiento(double costoDelAsiento);
     string toString();
     bool registrarAsiento(Asiento* asiento);
+    double totalRecaudado();
 };

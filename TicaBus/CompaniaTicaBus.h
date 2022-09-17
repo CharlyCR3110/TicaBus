@@ -24,4 +24,5 @@ public:
     //saber cuales y cuantos buses tienen mas de la mitad de su capacidad ocupada
     int cantidadBusesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada();
     string busesConLaMitadOMasDeLaMitadDeSuCapacidadOcupada();
+    double totalRecaudadoPorUnBus(string placa);
 };
