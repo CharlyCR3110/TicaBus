@@ -52,10 +52,15 @@ int main() {
         case 2:
             cout << "Ingrese la placa del bus: ";
             cin >> placaBus;
-            cout << "Ingrese la cedula del pasajero: ";
-            cin >> cedula;
-            asiento = new Asiento(cedula);
-            compania->registrarAsiento(placaBus, asiento);
+			cout << "Buscando el bus..." << endl;
+            if (compania->existeElBus(placaBus)) {
+                cout << "Ingrese la cedula del pasajero: ";
+                cin >> cedula;
+                asiento = new Asiento(cedula);
+                compania->registrarAsiento(placaBus, asiento);
+			} else {
+				cout << "No existe el bus" << endl;
+			}
             break;
         case 3:
             cout << "Cantidad de buses con la mitad o mas de los asientos ocupados: " 
